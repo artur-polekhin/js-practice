@@ -1,0 +1,11 @@
+function concatStrings(str1, str2) {
+    if (str1.length < str2.length) {
+        return str1 + str2 + str1;
+    } else {
+        return str2 + str1 + str2
+    }
+}
+
+console.log(concatStrings('1', '22'));
+console.log(concatStrings('1', '22'));
+console.log(concatStrings('22', '   '));
