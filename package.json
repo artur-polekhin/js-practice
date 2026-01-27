@@ -15,9 +15,19 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "esl:les12": "npx eslint hw_12.1/test-formating.js",
+    "pret:les12": "npx prettier --write hw_12.1/test-formating.js"
   },
   "dependencies": {
     "chalk": "^5.6.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "husky": "^9.1.7",
+    "prettier": "3.8.0"
   }
 }
